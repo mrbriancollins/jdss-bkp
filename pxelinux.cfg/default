@@ -1,0 +1,45 @@
+DEFAULT menu
+PROMPT 0
+MENU TITLE Cobbler | http://cobbler.github.io/
+TIMEOUT 200
+TOTALTIMEOUT 6000
+ONTIMEOUT local
+
+LABEL local
+        MENU LABEL (local)
+        MENU DEFAULT
+        LOCALBOOT -1
+
+LABEL CentOS-7-3-1611-x86_64
+        kernel /images/CentOS-7-3-1611-x86_64/vmlinuz
+        MENU LABEL CentOS-7-3-1611-x86_64
+        append initrd=/images/CentOS-7-3-1611-x86_64/initrd.img ksdevice=bootif lang=  kssendmac text  ks=http://192.168.68.2/cblr/svc/op/ks/profile/CentOS-7-3-1611-x86_64
+        ipappend 2
+
+LABEL Ubuntu_16.04-x86_64
+        kernel /images/Ubuntu_16.04-x86_64/linux
+        MENU LABEL Ubuntu_16.04-x86_64
+        append initrd=/images/Ubuntu_16.04-x86_64/initrd.gz ksdevice=bootif lang=  text  auto-install/enable=true priority=critical url=http://192.168.68.2/cblr/svc/op/ks/profile/Ubuntu_16.04-x86_64 hostname=Ubuntu16.04-x8664 domain=local.lan suite=xenial
+        ipappend 2
+
+LABEL Ubuntu_17.04-x86_64
+        kernel /images/Ubuntu_17.04-x86_64/linux
+        MENU LABEL Ubuntu_17.04-x86_64
+        append initrd=/images/Ubuntu_17.04-x86_64/initrd.gz ksdevice=bootif lang=  text  auto-install/enable=true priority=critical url=http://192.168.68.2/cblr/svc/op/ks/profile/Ubuntu_17.04-x86_64 hostname=Ubuntu17.04-x8664 domain=local.lan suite=zesty
+        ipappend 2
+
+LABEL centos
+        kernel /images/CentOS-7-3-1611-x86_64/vmlinuz
+        MENU LABEL centos
+        append initrd=/images/CentOS-7-3-1611-x86_64/initrd.img ksdevice=bootif lang=  kssendmac text  ks=http://192.168.68.2/cblr/svc/op/ks/profile/centos
+        ipappend 2
+
+LABEL ubuntu
+        kernel /images/Ubuntu_16.04-hwe-x86_64/linux
+        MENU LABEL ubuntu
+        append initrd=/images/Ubuntu_16.04-hwe-x86_64/initrd.gz ksdevice=bootif lang=  netcfg/choose_interface=eno2 nouveau.modeset=0 text  auto-install/enable=true priority=critical url=http://192.168.68.2/cblr/svc/op/ks/profile/ubuntu hostname=ubuntu domain=local.lan suite=xenial
+        ipappend 2
+
+
+
+MENU end

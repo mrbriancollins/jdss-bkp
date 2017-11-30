@@ -1,0 +1,7 @@
+[cobbler]
+gitdate = ?
+gitstamp = ?
+builddate = Mon Jun 12 17:09:17 2017
+version = 2.8.1
+version_tuple = [2, 8, 1]
+
