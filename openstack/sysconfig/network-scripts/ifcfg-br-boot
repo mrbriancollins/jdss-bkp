@@ -1,0 +1,10 @@
+ONBOOT=yes
+DEVICE=br-boot
+DEVICETYPE=ovs
+OVSBOOTPROTO="none"
+TYPE=OVSBridge
+OVS_EXTRA="set bridge br-ex fail_mode=standalone"
+ONBOOT=yes
+IPADDR=192.168.86.2
+NETMASK=255.255.255.0
+MTU=9000
