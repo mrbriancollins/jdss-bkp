@@ -8,7 +8,11 @@ CONFIG_SSH_KEY=/root/.ssh/id_rsa.pub
 
 # Default password to be used everywhere (overridden by passwords set
 # for individual services or users).
+<<<<<<< HEAD
 CONFIG_DEFAULT_PASSWORD=skyscale
+=======
+CONFIG_DEFAULT_PASSWORD=
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # The amount of service workers/threads to use for each service.
 # Useful to tweak when you have memory constraints. Defaults to the
@@ -50,6 +54,7 @@ CONFIG_CEILOMETER_INSTALL=y
 CONFIG_AODH_INSTALL=y
 
 # Specify 'y' to install OpenStack Events Service (panko). ['y', 'n']
+<<<<<<< HEAD
 CONFIG_PANKO_INSTALL=y
 
 # Specify 'y' to install OpenStack Data Processing (sahara). In case
@@ -69,6 +74,27 @@ CONFIG_TROVE_INSTALL=y
 # Specify 'y' to install OpenStack Bare Metal Provisioning (ironic).
 # ['y', 'n']
 CONFIG_IRONIC_INSTALL=y
+=======
+CONFIG_PANKO_INSTALL=n
+
+# Specify 'y' to install OpenStack Data Processing (sahara). In case
+# of sahara installation packstack also installs heat.['y', 'n']
+CONFIG_SAHARA_INSTALL=n
+
+# Specify 'y' to install OpenStack Orchestration (heat). ['y', 'n']
+CONFIG_HEAT_INSTALL=n
+
+# Specify 'y' to install OpenStack Container Infrastructure
+# Management Service (magnum). ['y', 'n']
+CONFIG_MAGNUM_INSTALL=n
+
+# Specify 'y' to install OpenStack Database (trove) ['y', 'n']
+CONFIG_TROVE_INSTALL=n
+
+# Specify 'y' to install OpenStack Bare Metal Provisioning (ironic).
+# ['y', 'n']
+CONFIG_IRONIC_INSTALL=n
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Specify 'y' to install the OpenStack Client packages (command-line
 # tools). An admin "rc" file will also be installed. ['y', 'n']
@@ -76,7 +102,11 @@ CONFIG_CLIENT_INSTALL=y
 
 # Comma-separated list of NTP servers. Leave plain if Packstack
 # should not install ntpd on instances.
+<<<<<<< HEAD
 CONFIG_NTP_SERVERS=us.pool.ntp.org
+=======
+CONFIG_NTP_SERVERS=
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Comma-separated list of servers to be excluded from the
 # installation. This is helpful if you are running Packstack a second
@@ -247,6 +277,7 @@ CONFIG_SSL_CERT_DIR=~/packstackca/
 CONFIG_SSL_CACERT_SELFSIGN=y
 
 # Enter the ssl certificates subject country.
+<<<<<<< HEAD
 CONFIG_SSL_CERT_SUBJECT_C=US
 
 # Enter the ssl certificates subject state.
@@ -265,6 +296,26 @@ CONFIG_SSL_CERT_SUBJECT_OU=stack
 CONFIG_SSL_CERT_SUBJECT_CN=zeus.skyscale.com
 
 CONFIG_SSL_CERT_SUBJECT_MAIL=admin@zeus.skyscale.com
+=======
+CONFIG_SSL_CERT_SUBJECT_C=--
+
+# Enter the ssl certificates subject state.
+CONFIG_SSL_CERT_SUBJECT_ST=State
+
+# Enter the ssl certificates subject location.
+CONFIG_SSL_CERT_SUBJECT_L=City
+
+# Enter the ssl certificates subject organization.
+CONFIG_SSL_CERT_SUBJECT_O=openstack
+
+# Enter the ssl certificates subject organizational unit.
+CONFIG_SSL_CERT_SUBJECT_OU=packstack
+
+# Enter the ssl certificates subject common name.
+CONFIG_SSL_CERT_SUBJECT_CN=zues
+
+CONFIG_SSL_CERT_SUBJECT_MAIL=admin@zues
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Service to be used as the AMQP broker. Allowed values are: rabbitmq
 # ['rabbitmq']
@@ -274,6 +325,7 @@ CONFIG_AMQP_BACKEND=rabbitmq
 CONFIG_AMQP_HOST=192.168.69.84
 
 # Specify 'y' to enable SSL for the AMQP service. ['y', 'n']
+<<<<<<< HEAD
 CONFIG_AMQP_ENABLE_SSL=y
 
 # Specify 'y' to enable authentication for the AMQP service. ['y',
@@ -282,12 +334,26 @@ CONFIG_AMQP_ENABLE_AUTH=y
 
 # Password for the NSS certificate database of the AMQP service.
 CONFIG_AMQP_NSS_CERTDB_PW=skyscale
+=======
+CONFIG_AMQP_ENABLE_SSL=n
+
+# Specify 'y' to enable authentication for the AMQP service. ['y',
+# 'n']
+CONFIG_AMQP_ENABLE_AUTH=n
+
+# Password for the NSS certificate database of the AMQP service.
+CONFIG_AMQP_NSS_CERTDB_PW=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # User for AMQP authentication.
 CONFIG_AMQP_AUTH_USER=amqp_user
 
 # Password for AMQP authentication.
+<<<<<<< HEAD
 CONFIG_AMQP_AUTH_PASSWORD=skyscale
+=======
+CONFIG_AMQP_AUTH_PASSWORD=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # IP address of the server on which to install MariaDB. If a MariaDB
 # installation was not specified in CONFIG_MARIADB_INSTALL, specify
@@ -311,7 +377,11 @@ CONFIG_KEYSTONE_DB_PURGE_ENABLE=True
 
 # Default region name to use when creating tenants in the Identity
 # service.
+<<<<<<< HEAD
 CONFIG_KEYSTONE_REGION=SkyScale
+=======
+CONFIG_KEYSTONE_REGION=RegionOne
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Token to use for the Identity service API.
 CONFIG_KEYSTONE_ADMIN_TOKEN=070aca3a3eab42aea8014ab63bf0529b
@@ -521,7 +591,11 @@ CONFIG_GLANCE_KS_PW=32cf4cab2356401b
 # (Object Storage). The Object Storage service must be enabled to use
 # it as a working backend; otherwise, Packstack falls back to 'file'.
 # ['file', 'swift']
+<<<<<<< HEAD
 CONFIG_GLANCE_BACKEND=swift
+=======
+CONFIG_GLANCE_BACKEND=file
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Password to use for the Block Storage service (cinder) to access
 # the database.
@@ -702,11 +776,19 @@ CONFIG_CINDER_SOLIDFIRE_HOSTNAME=
 
 # Password to use for OpenStack Bare Metal Provisioning (ironic) to
 # access the database.
+<<<<<<< HEAD
 CONFIG_IRONIC_DB_PW=IRONIC_PASSWORD
 
 # Password to use for OpenStack Bare Metal Provisioning to
 # authenticate with the Identity service.
 CONFIG_IRONIC_KS_PW=5cb4451d39d347a4
+=======
+CONFIG_IRONIC_DB_PW=PW_PLACEHOLDER
+
+# Password to use for OpenStack Bare Metal Provisioning to
+# authenticate with the Identity service.
+CONFIG_IRONIC_KS_PW=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Enter y if cron job for removing soft deleted DB rows should be
 # created.
@@ -781,7 +863,11 @@ CONFIG_NEUTRON_METADATA_PW=56a42e8e03e14ab3
 
 # Specify 'y' to install OpenStack Networking's Load-Balancing-
 # as-a-Service (LBaaS). ['y', 'n']
+<<<<<<< HEAD
 CONFIG_LBAAS_INSTALL=y
+=======
+CONFIG_LBAAS_INSTALL=n
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Specify 'y' to install OpenStack Networking's L3 Metering agent
 # ['y', 'n']
@@ -789,11 +875,19 @@ CONFIG_NEUTRON_METERING_AGENT_INSTALL=y
 
 # Specify 'y' to configure OpenStack Networking's Firewall-
 # as-a-Service (FWaaS). ['y', 'n']
+<<<<<<< HEAD
 CONFIG_NEUTRON_FWAAS=y
 
 # Specify 'y' to configure OpenStack Networking's VPN-as-a-Service
 # (VPNaaS). ['y', 'n']
 CONFIG_NEUTRON_VPNAAS=y
+=======
+CONFIG_NEUTRON_FWAAS=n
+
+# Specify 'y' to configure OpenStack Networking's VPN-as-a-Service
+# (VPNaaS). ['y', 'n']
+CONFIG_NEUTRON_VPNAAS=n
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Comma-separated list of network-type driver entry points to be
 # loaded from the neutron.ml2.type_drivers namespace. ['local',
@@ -839,7 +933,11 @@ CONFIG_NEUTRON_ML2_VXLAN_GROUP=
 # Comma-separated list of <vni_min>:<vni_max> tuples enumerating
 # ranges of VXLAN VNI IDs that are available for tenant network
 # allocation. Minimum value is 0 and maximum value is 16777215.
+<<<<<<< HEAD
 CONFIG_NEUTRON_ML2_VNI_RANGES=100:1000
+=======
+CONFIG_NEUTRON_ML2_VNI_RANGES=10:100
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Name of the L2 agent to be used with OpenStack Networking.
 # ['linuxbridge', 'openvswitch', 'ovn']
@@ -1115,7 +1213,11 @@ CONFIG_MANILA_GLUSTERFS_PATH_TO_PRIVATE_KEY=
 CONFIG_MANILA_GLUSTERFS_GANESHA_SERVER_IP=
 
 # Specify 'y' to set up Horizon communication over https. ['y', 'n']
+<<<<<<< HEAD
 CONFIG_HORIZON_SSL=y
+=======
+CONFIG_HORIZON_SSL=n
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Secret key to use for Horizon Secret Encryption Key.
 CONFIG_HORIZON_SECRET_KEY=fc3628d0ccac4f4fb3dcf030c34f794f
@@ -1159,6 +1261,7 @@ CONFIG_SWIFT_STORAGE_FSTYPE=ext4
 CONFIG_SWIFT_HASH=0cf744d1098a49f2
 
 # Size of the Object Storage loopback file storage device.
+<<<<<<< HEAD
 CONFIG_SWIFT_STORAGE_SIZE=20G
 
 # Password used by Orchestration service user to authenticate against
@@ -1172,6 +1275,21 @@ CONFIG_HEAT_AUTH_ENC_KEY=9b6907197933419d
 # Password to use for the Orchestration service to authenticate with
 # the Identity service.
 CONFIG_HEAT_KS_PW=e5c1ed5067e9437b
+=======
+CONFIG_SWIFT_STORAGE_SIZE=2G
+
+# Password used by Orchestration service user to authenticate against
+# the database.
+CONFIG_HEAT_DB_PW=PW_PLACEHOLDER
+
+# Encryption key to use for authentication in the Orchestration
+# database (16, 24, or 32 chars).
+CONFIG_HEAT_AUTH_ENC_KEY=ce9b9d092aae447e
+
+# Password to use for the Orchestration service to authenticate with
+# the Identity service.
+CONFIG_HEAT_KS_PW=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Specify 'y' to install the Orchestration CloudWatch API. ['y', 'n']
 CONFIG_HEAT_CLOUDWATCH_INSTALL=n
@@ -1188,7 +1306,11 @@ CONFIG_HEAT_DOMAIN_ADMIN=heat_admin
 
 # Password for the Identity domain administrative user for
 # Orchestration.
+<<<<<<< HEAD
 CONFIG_HEAT_DOMAIN_PASSWORD=28c13d23de6748a6
+=======
+CONFIG_HEAT_DOMAIN_PASSWORD=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # Specify 'y' to provision for demo usage and testing. ['y', 'n']
 CONFIG_PROVISION_DEMO=n
@@ -1326,6 +1448,7 @@ CONFIG_AODH_KS_PW=fc0cbab2ae0d446c
 CONFIG_AODH_DB_PW=bae30c3783e24075
 
 # Password to use for Panko to access the database.
+<<<<<<< HEAD
 CONFIG_PANKO_DB_PW=skyscale
 
 # Password to use for Panko to authenticate with the Identity
@@ -1339,6 +1462,21 @@ CONFIG_TROVE_DB_PW=skyscale
 # Password to use for OpenStack Database-as-a-Service to authenticate
 # with the Identity service.
 CONFIG_TROVE_KS_PW=skyscale
+=======
+CONFIG_PANKO_DB_PW=PW_PLACEHOLDER
+
+# Password to use for Panko to authenticate with the Identity
+# service.
+CONFIG_PANKO_KS_PW=PW_PLACEHOLDER
+
+# Password to use for OpenStack Database-as-a-Service (trove) to
+# access the database.
+CONFIG_TROVE_DB_PW=PW_PLACEHOLDER
+
+# Password to use for OpenStack Database-as-a-Service to authenticate
+# with the Identity service.
+CONFIG_TROVE_KS_PW=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
 
 # User name to use when OpenStack Database-as-a-Service connects to
 # the Compute service.
@@ -1350,6 +1488,7 @@ CONFIG_TROVE_NOVA_TENANT=services
 
 # Password to use when OpenStack Database-as-a-Service connects to
 # the Compute service.
+<<<<<<< HEAD
 CONFIG_TROVE_NOVA_PW=skyscale
 
 # Password to use for OpenStack Data Processing (sahara) to access
@@ -1366,3 +1505,21 @@ CONFIG_MAGNUM_DB_PW=skyscale
 # Password to use for the Magnum to authenticate with the Identity
 # service.
 CONFIG_MAGNUM_KS_PW=skyscale
+=======
+CONFIG_TROVE_NOVA_PW=PW_PLACEHOLDER
+
+# Password to use for OpenStack Data Processing (sahara) to access
+# the database.
+CONFIG_SAHARA_DB_PW=PW_PLACEHOLDER
+
+# Password to use for OpenStack Data Processing to authenticate with
+# the Identity service.
+CONFIG_SAHARA_KS_PW=PW_PLACEHOLDER
+
+# Password to use for the Magnum to access the database.
+CONFIG_MAGNUM_DB_PW=PW_PLACEHOLDER
+
+# Password to use for the Magnum to authenticate with the Identity
+# service.
+CONFIG_MAGNUM_KS_PW=PW_PLACEHOLDER
+>>>>>>> 03b78208ea4a94632d39480f48c534e662a5daa2
