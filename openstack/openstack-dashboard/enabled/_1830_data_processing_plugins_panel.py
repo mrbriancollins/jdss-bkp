@@ -1,0 +1,1 @@
+/usr/share/openstack-dashboard/openstack_dashboard/local/enabled/_1830_data_processing_plugins_panel.py

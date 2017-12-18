@@ -1,0 +1,1000 @@
+   45  iptables -l
+   46  iptables -L
+   47  iptables -Ln
+   48  iptables -dL
+   49  vi /etc/sysconfig/iptables
+   50  iptables -L | grepvnc
+   51  iptables -L | grep vnc
+   52  systemctl status nova
+   53  systemctl status 
+   54  systemctl 
+   55  systemctl status openstack-nova-novncproxy
+   56  tail -f /var/log/nova/nova-novncproxy.log 
+   57  jobs
+   58  vi /etc/nova/nova.conf 
+   59  systemctl status openstack-nova-novncproxy
+   60  systemctl restat openstack-nova-novncpr
+   61  systemctl status openstack-nova-novncproxy
+   62  systemctl restart openstack-nova-novncproxy
+   63  systemctl status openstack-nova-novncproxy
+   64  tail -f /var/log/nova/nova-novncproxy.log 
+   65  vi /etc/nova/nova.conf 
+   66  systemctl restart openstack-nova-novncproxy
+   67  vi /etc/nova/nova.conf 
+   68  systemctl status openstack-nova-novncproxy
+   69  systemctl restart openstack-nova-novncproxy
+   70  tail -f /var/log/nova/nova-novncproxy.log 
+   71  systemctl restart openstack-nova
+   72  systemctl restart openstack-nova.*
+   73  systemctl status openstack-nova.*
+   74  systemctl status openstack-nova\
+   75  systemctl status openstack-nova
+   76  exit
+   77  ps -faux
+   78  cinder 
+   79  ps -fauxww
+   80  ip l
+   81  ip netns 
+   82  screen -ls
+   83  screen -x
+   84  ipl
+   85  ip l
+   86  ifconfig
+   87  vi /etc/sysconfig/network-scripts/
+   88  vi /etc/sysconfig/network-scripts/ifcfg-enp8s0f0
+   89  ps -fauxww
+   90  service network restart
+   91  ifcofnig
+   92  ifconfig
+   93  packstack --allinone --provision-demo=n --os-neutron-ovs-bridge-mappings=extnet:br-ex --os-neutron-ovs-bridge-interfaces=br-ex:enp8s0f0 --os-neutron-ml2-type-drivers=vxlan,flat
+   94  yum erase mysql -y
+   95  packstack --allinone --provision-demo=n --os-neutron-ovs-bridge-mappings=extnet:br-ex --os-neutron-ovs-bridge-interfaces=br-ex:enp8s0f0 --os-neutron-ml2-type-drivers=vxlan,flat 
+   96  ls
+   97  cat keystonerc_admin 
+   98  . keystonerc_admin 
+   99  open
+  100  openstack
+  101  clear
+  102  mysql -u root -p
+  103  ls
+  104  ls -ltr
+  105  rm packstack-answers-20171205-144939.txt packstack-answers-20171205-150031.txt packstack-answers-20171205-150105.txt packstack-answers-20171205-150750.txt
+  106  ll
+  107  cat packstack-answers-20171205-151914.txt | more
+  108  mysql -u root
+  109  exit;
+  110  screen -ls
+  111  screen -x
+  112  yum install openstack-ironic-api openstack-ironic-conductor python-ironicclient -y
+  113  yum search diskimage
+  114  yum install -y diskimage-builder.noarch dib-utils.noarch virt-dib.x86_64
+  115  yum install -y bitfrost
+  116  yum search bitfrost
+  117  df
+  118  d f-h
+  119  df -h
+  120  systemctl enable openstack-ironic-api openstack-ironic-conductor
+  121  systemctl start openstack-ironic-api openstack-ironic-conductor
+  122  ps -fauxww
+  123  yum install webmin
+  124  ps -fauxww
+  125  top
+  126  ls
+  127  mv packstack-answers-20171205-151914.txt packstack-answers.txt
+  128  uiptime
+  129  uptime
+  130  systemctl disable openstack-
+  131  systemctl disable
+  132  systemctl
+  133  ls
+  134  mdadm -c 
+  135  mdadm --help
+  136  mdadm --scan
+  137  man mdadm
+  138  mdadm -s
+  139  mdadm 
+  140  mdadm --assemble --scan 
+  141  mdadm --detail --scan >> /etc/mdadm.conf
+  142  mdadm --detail --scan
+  143  mdadm --assemble --scan 
+  144  mdadm --detail --scan
+  145  mdadm --assemble
+  146  mdadm --assemble /dev/md/0
+  147  mdadm --assemble /dev/md/foreman\:0 
+  148  mdadm --assemble --scan /dev/md/foreman\:0 
+  149  mount
+  150  git clone https://github.com/mrbriancollins/jdss-bkp.git
+  151  l
+  152  ll
+  153  cp keystonerc_* jdss-bkp/
+  154  cp packstack-answers.txt jdss-bkp/
+  155  ll
+  156  cd ..
+  157  ll
+  158  mkdir images 
+  159  mount /dev/md/foreman\:0 /images/
+  160  cd images/
+  161  ls
+  162  ps -fauxww
+  163  cd 
+  164  vi packstack-answers.txt 
+  165  vi /etc/ironic/ironic.conf 
+  166  ls
+  167  cd /etc/ironic/
+  168  ls
+  169  ls -al
+  170  cd /usr/local/share/cd ...
+  171  cd ..
+  172  cd cd /usr/share/
+  173   cd /usr/share/
+  174  ll
+  175  cd openstack-selinux/
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd ironic/
+  180  ls
+  181  cat ironic-dist.conf 
+  182  ll
+  183  cd ..
+  184  ls
+  185  openstack-dashboard/
+  186  ls
+  187  cd openstack-dashboard/
+  188  ls
+  189  ./manage.py 
+  190  ls
+  191  cd static/
+  192  ls
+  193  cd dashboard/
+  194  ls
+  195  cd ..
+  196  ls
+  197  cd app/
+  198  ll
+  199  cd ..
+  200  ls
+  201  cd horizon/
+  202  ls
+  203  cd ..
+  204  ls
+  205  cd dashboard/
+  206  lz
+  207  ll
+  208  cd img/
+  209  ls
+  210  ll
+  211  cd ..
+  212  ll
+  213  cd identity/
+  214  ll
+  215  cd ..
+  216  ls
+  217  cd ..
+  218  ls
+  219  visudo
+  220  exit
+  221  cd /etc/nova
+  222  vi nova.conf 
+  223   vi /etc/ironic/ironic.conf 
+  224  ironic-dbsync --config-file /etc/ironic/ironic.conf create_schema
+  225  sudo systemctl restart openstack-ironic-api
+  226   cd /var/log/ironic/
+  227  ls
+  228  tail -f ironic-api.log &
+  229  fg
+  230   vi /etc/ironic/ironic.conf 
+  231  vi /etc/nova/nova.conf 
+  232   vi /etc/ironic/ironic.conf 
+  233    sudo systemctl restart openstack-ironic-api
+  234  tail -f ironic-api.log &
+  235  ls
+  236  tail -100 ironic-conductor.log 
+  237  vi /etc/nova/nova.con
+  238  vi /etc/nova/nova.conf 
+  239    sudo yum install httpd
+  240    sudo cp etc/apache2/ironic /etc/httpd/conf.d/ironic.conf
+  241  cd /etc/httpd/
+  242  ls
+  243  cd conf.modules.d/
+  244  ls
+  245  cd ..
+  246  ls
+  247  ls -al
+  248  cd conf
+  249  ls
+  250  cd ..
+  251  cd conf.d/
+  252  ls
+  253  ll
+  254  cd /usr/share/ironic/
+  255  cat ironic-dist.conf 
+  256  cd ..
+  257  ls
+  258  cd /usr/sh
+  259  ls
+  260  cd /usr/`
+  261  ls
+  262  cd /usr ll\
+  263  cd /usr
+  264  ll4
+  265  ll
+  266  cd etc/
+  267  ll
+  268  cd ..
+  269  ls
+  270  cd local/
+  271  ll
+  272  cd etc/
+  273  ll
+  274  cd ..
+  275  ls
+  276  cd ..
+  277  ls
+  278  c share/
+  279  ls
+  280  cd share/
+  281  ll
+  282  cd ..
+  283  lsl
+  284  ll
+  285  cd include/
+  286  ll
+  287  cd ..
+  288  ll
+  289  cd local/
+  290  ll
+  291  cd etc/
+  292  lll
+  293  ll
+  294  cd 
+  295  ls
+  296  yum info openstack-ironic
+  297  yum search ironic
+  298  yum install openstack-ironic{-,*}
+  299  yum info python2-ironic-python-agent-2.2.2-1.el7.noarch
+  300  updatedb & 
+  301  locate ironic
+  302  find / -name ironic -print
+  303  cd /var/lib/
+  304  ls
+  305  cd ironic
+  306  ls
+  307  ll
+  308  cat ironic.sqlite 
+  309  ls
+  310  cd ..
+  311  ls
+  312  cd ..
+  313  ls
+  314  ll
+  315  cd loc
+  316  cd local/
+  317  ls
+  318  cd ..
+  319  ls
+  320  yum search openstack-ir
+  321  yum install openstack-ironic-*.noarch
+  322  yum search ironic
+  323  yum install {openstack,puppet,python,python2}-ironic-*.noarch
+  324  cd /etc/
+  325  ls
+  326  cd ironic/
+  327  ls
+  328  cd ..
+  329  ls
+  330  cd ironic-python-agent/
+  331  ls
+  332  cd ..
+  333  ls
+  334  cd openstack-dashboard/
+  335  ll
+  336  cd enabled/
+  337  ll
+  338  cd ..
+  339  ls
+  340  vi local_settings 
+  341  ls
+  342  ll
+  343  cd enabled/
+  344  ll
+  345  cd ...
+  346  cd ..
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd /usr/share/openstack-dashboard/
+  351  ls
+  352  ./manage.py 
+  353  ./manage.py update_catalog
+  354  cd /usr/share/openstack-dashboard/openstack_dashboard/enabled
+  355  ll
+  356  cd ..
+  357  ll
+  358  cd local
+  359  l;s
+  360  ll
+  361  cd local_settings.
+  362  cd local_settings.d/
+  363  ls
+  364  ll
+  365  cd ..
+  366  ls
+  367  cd ..
+  368  ll
+  369  cd utils/
+  370  ll
+  371  vi settings.py
+  372  cd ..
+  373  ls
+  374  ls -ltr
+  375  cd management/
+  376  ls
+  377  cd commands/
+  378  ls
+  379  ll
+  380  cat apache_vhost.conf.template 
+  381  ll
+  382  /usr/share/ironic/
+  383  ll 
+  384  /usr/share/openstack-dashboard/manage.py 
+  385  /usr/share/openstack-dashboard/manage.py make_web_conf
+  386  /usr/share/openstack-dashboard/openstack_dashboard/wsgi/horizon.wsgi manage.py
+  387  make_web_conf --apache
+  388  /usr/share/openstack-dashboard/openstack_dashboard/wsgi/horizon.wsgi manage.py
+  389  cd /etc/httpd/conf.d/openstack_dashboard.conf
+  390  cd /etc/httpd/conf.d/
+  391  ll
+  392  vi openstack-dashboard.conf 
+  393  ll
+  394  cd -
+  395  ll
+  396  cat apache_vhost.conf.template 
+  397  ls
+  398  ls -ltr
+  399  python make_web_conf.py
+  400  cd ..
+  401  ls
+  402  cd ..
+  403  ls
+  404  cd api/
+  405  ll
+  406  cd ..
+  407  ll
+  408  cd utils/
+  409  lll
+  410  ll
+  411  cd ..
+  412  ll
+  413  cd wsgi/
+  414  ll
+  415  cd ..
+  416  ll
+  417  cd usage/
+  418  ll
+  419  cd ..
+  420  ll
+  421  cd test/
+  422  ll
+  423  cd ..
+  424  ll
+  425  la -l
+  426   ls -al management/
+  427  ls -al local
+  428  ls -al local/enabled/
+  429  ll
+  430  ls -al enabled
+  431  ll
+  432  cd django_pyscss_fix/
+  433  ll
+  434  cd ..
+  435  ls
+  436  cd dashboards/
+  437  ll
+  438  cd settings/
+  439  ll
+  440  cd ..
+  441  ll
+  442  cfd ..
+  443  ll
+  444  cd ..
+  445  ll
+  446  cd contrib/
+  447  ls
+  448  ll
+  449  cd ..
+  450  ll
+  451  cd api/
+  452  ll
+  453  cd ..
+  454  ls
+  455  cd ..
+  456  ll
+  457  cd static/
+  458  ll
+  459  cd ..
+  460  ll
+  461  cd openstack_dashboard/
+  462  ll
+  463  cd ..
+  464  ll
+  465  ./manage.py help
+  466  ./manage.py findstatic 
+  467  ./manage.py findstatic .
+  468  ./manage.py collectstatic .
+  469  ./manage.py collectstatic
+  470  cd 
+  471  /usr/share/openstack-dashboard/manage.py collectstatic
+  472  service httpd restart
+  473  cd /etc/ironic-python-agent/
+  474  ll
+  475  cd ..
+  476  ll
+  477  vi ironic/ironic.conf 
+  478    sudo systemctl restart openstack-ironic-conductor
+  479  openstack user create --password IRONIC_PASSWORD     --email ironic@example.com ironic
+  480  openstack user create help
+  481  . /root/keystonerc_admin 
+  482  openstack user create --password IRONIC_PASSWORD     --email ironic@example.com ironic
+  483  openstack role add --project service --user ironic admin
+  484  openstack project list
+  485  openstack role add --project services --user ironic admin
+  486  openstack service create --name ironic --description     "Ironic baremetal provisioning service" baremetal
+  487   openstack endpoint list
+  488  openstack endpoint create --region RegionOne     --publicurl http://192.168.86.2:6385     --internalurl http://192.168.86.2:6385     --adminurl http://192.168.86.2:6385     baremetal
+  489  openstack endpoint create --region RegionOne     --publicurl public http://192.168.86.2:6385     --internalurl internal http://192.168.86.2:6385     --adminurl admin http://192.168.86.2:6385     baremetal
+  490  openstack endpoint create --region RegionOne public http://192.168.86.2:6385 internal http://192.168.86.2:6385 admin http://192.168.86.2:6385     baremetal
+  491  openstack endpoint create --region RegionOne     baremetal admin http://192.168.69.84:6385
+  492  openstack endpoint create --region RegionOne     baremetal public http://192.168.69.84:6385
+  493  openstack endpoint create --region RegionOne     baremetal internal http://192.168.69.84:6385
+  494  openstack role create baremetal_admin
+  495  openstack role create baremetal_observer
+  496  vi ironic/ironic.conf 
+  497  cd
+  498  cp /etc/nova/nova.conf /root/jdss-bkp/
+  499  vi /etc/nova/nova.conf 
+  500    sudo systemctl restart openstack-nova-scheduler
+  501    sudo systemctl restart openstack-nova-{compute,scheduler}
+  502  "systemctl status openstack-nova-compute.service
+  503  systemctl status openstack-nova-compute.service
+  504  systemctl restart openstack-nova*
+  505  systemctl status openstack-nova*
+  506  tail -f /var/log/nova/nova-compute.log 
+  507  cp /etc/nova/nova.conf /root/jdss-bkp/
+  508  vi /etc/nova/nova.conf 
+  509  yum search genisoimage 
+  510  yum search iso
+  511  yum install -y deltaiso.x86_64 fuseiso.x86_64 genisoimage.x86_64 isomd5sum-devel.x86_64 isomd5sum.x86_64 libisofs.i686 python-isomd5sum.x86_64 
+  512  vi /etc/nova/nova.conf 
+  513    sudo systemctl restart openstack-nova-compute openstack-nova-scheduler
+  514  systemctl status openstack-nova-compute.service
+  515  systemctl status openstack-nova-scheduler.service
+  516  systemctl status openstack-nova-compute.service
+  517  systemctl status openstack-nova-scheduler.service
+  518  cd /var/log/nova/
+  519  ls
+  520  tail -f nova-*.log
+  521  dmidecode | more
+  522  dmidecode | more \
+  523  dmidecode | more 
+  524  lspci 
+  525  ifconfig
+  526  lspci -svv 06:00:0
+  527  lspci -svv 06:00.0
+  528  lspci -vvs 06:00.0
+  529  lspci -vvss 06:00.0
+  530  man lspci
+  531  lspci -m 06:00.0
+  532  lspci -mm 06:00.0
+  533  lspci -mm 
+  534  lspci -vvvvS 00.06.
+  535  lspci -mm 06:00.0
+  536  lspci -vvss 06:00.0
+  537  lspci -mm 06:00.0
+  538  lspci -vvs 0:06.0
+  539  lspci -vvvvs 0:06.0
+  540  lspci -vvvvs 00:06.0
+  541  lspci -vvvvs 06:00.0
+  542  ls -al
+  543  vi /etc/neutron/plugins/ml2/ml2_conf.in
+  544  vi /etc/neutron/plugins/ml2/ml2_conf.ini 
+  545  vi /etc/neutron/plugins/ml2/openvswitch_agent.ini 
+  546  ls -al
+  547  ls
+  548  cd /etc/
+  549  ls
+  550  cd neutron/
+  551  lx
+  552  ll
+  553  cd conf.d/
+  554  ll
+  555  cd ..
+  556  ls
+  557  cd conf.d/
+  558  ll
+  559  cd ..
+  560  ll
+  561  cd plugin
+  562  cd plugins/
+  563  ll
+  564  cd ml2/
+  565  cat ml2_conf.ini 
+  566  vi ml2_conf.ini 
+  567  vi /etc/neutron/plugins/ml2/openvswitch_agent.ini 
+  568  ps -fauxww
+  569  ifconfig
+  570  ifconfigenp8s0f1
+  571  ifconfig enp8s0f1
+  572  cd /etc/sysconfig/network-scripts
+  573  cat /etc/sysconfig/network-scripts/ifcfg-enp8s0f1
+  574  vi /etc/sysconfig/network-scripts/ifcfg-enp8s0f1
+  575  ifup enp8s0f1
+  576  vi /etc/sysconfig/network-scripts/ifcfg-enp8s0f1
+  577  ifdown enp8s0f1
+  578  ifup enp8s0f1
+  579  ifconfig
+  580  ps -fauww
+  581  ps m-fauxww
+  582  ps -fauxw
+  583  ls 
+  584  cd ..
+  585  sl
+  586  ls
+  587    sudo systemctl reload httpd
+  588  cd etc/
+  589  ls
+  590  mount
+  591  umount /dev/md127 
+  592  MOUNT
+  593  mount
+  594  mount /dev/md/foreman\:0 /images/
+  595  mount 
+  596  ls -al
+  597  cd openstack-dashboard/
+  598  ls
+  599  cd ..
+  600  ls
+  601   vi dnsmasq.
+  602   vi dnsmasq.conf 
+  603  history
+  604  top 
+  605  ps -fauxw
+  606  lll
+  607  top
+  608  ps -fauxw
+  609  ps 
+  610  top -c
+  611  yum search designate
+  612  clear
+  613  ps -fauxww
+  614  dig 199.187.240.75
+  615  yum search dig 
+  616  yum search named
+  617  yum search utils
+  618  yum install -y bind-utils.x86_64
+  619  dig @199.187.240.75 google.com
+  620  dig @199.187.240.76 google.com
+  621  vi /etc/resolv.conf 
+  622  ls
+  623  dig @199.187.240.75 google.com
+  624  vi /etc/resolv.conf 
+  625  ls -altr
+  626  ifconfig
+  627  ps -fauxww
+  628  uptine
+  629  uptime
+  630  ovs-vsctl show
+  631  ifcinfig
+  632  ip l
+  633  ls -alk
+  634  ps =-fauxww
+  635  ps -fauxww
+  636  dig @199.187.240.75 google.com
+  637  vi /etc/resolv.conf 
+  638  ls -al
+  639  ovs-vsctl add-br br-int
+  640  ls -al
+  641  ovs-vsctl 
+  642  ovs-vsctl show
+  643  cd /etc/sysconfig/network-scripts/
+  644  LL
+  645  ll
+  646  cat ifcfg-br-ex > ifcfg-br-boot
+  647  vi ifcfg-br-boot 
+  648  ls -aql
+  649  ls -al
+  650  vi ifcfg-br-o
+  651  vi ifcfg-br-boot 
+  652  ls -al
+  653  ifdown enp8s0f1
+  654  cat enp8s0f1
+  655  cat ifcfg-enp8s0f1 
+  656  vi ifcfg-enp8s0f1 
+  657  cat ifcfg-enp8s0f1 >> ifcfg-br-boot
+  658  vi ifcfg-br-boot 
+  659  ifup br-boot
+  660  vi ifcfg-br-boot 
+  661  cat ifcfg-br-ex
+  662  vi ifcfg-br-boot 
+  663  ifup br-boot
+  664  ifconfig
+  665  vi ifcfg-enp8s0f1 
+  666  cat ifcfg-enp8s0f0
+  667  vi ifcfg-enp8s0f1 
+  668  vi ifcfg-enp8s0f2
+  669  vi ifcfg-enp8s0f0
+  670  vi ifcfg-enp8s0f1 
+  671  ifcofnig
+  672  ifconfig
+  673  ifdown br-boot
+  674  vi ifcfg-enp8s0f1 
+  675  ifup br-boot
+  676  ip a
+  677  ifdown br-boot
+  678  servcie network restart
+  679  service network restart
+  680  uptime
+  681  ifconfig
+  682  ls -ltr
+  683  screen -ls
+  684  uptime
+  685  ovs-vsctl show
+  686  service neutron-plugin-openvswitch-agent restart
+  687  systemctl 
+  688  systemctl restart neutron-openvswitch-agent.service
+  689  tail -f /var/log/openvswitch/{ovsdb-server.log,ovs-vswitchd.log} &]
+  690  cd /etc/sysconfig/network-scripts/
+  691  ls -ltr
+  692  cd'
+  693  cd 
+  694  . keystonerc_admin 
+  695  rm .\\
+  696  ls -ltr
+  697  cd -
+  698  rm .\\
+  699  rm \$PWD/\\ 
+  700  ls -ltr
+  701  rm -rf \\ 
+  702  ll
+  703  ls -al
+  704  cd 
+  705  cat keystonerc_admin 
+  706  openstack 
+  707  clear
+  708  openstack 
+  709  op
+  710  vi /etc/openstack-dashboard/local_settings 
+  711  systemctl status httpd
+  712  systemctl reload httpd
+  713  ovsvs-ctl
+  714  ovs-vsctl show
+  715  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707 pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  716  . keystonerc_admin 
+  717  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707 pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  718  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707 --mtu=9000 pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  719  neutron ?
+  720  neutron net-lsit
+  721  neutron net-list
+  722  neutron net-delete cb470542-7c35-418f-bc02-6c913c152777
+  723  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707 --mtu=9000 pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  724  . keystonerc_admin 
+  725  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707 --mtu=9000 pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  726  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707  pxe_boot_net_68 --shared       --provider:network_type flat --provider:physical_network br-boot
+  727  . keystonerc_admin 
+  728  ls -al
+  729  neutron subnet-create pxe_boot_net_68 192.168.68.0/24 --name pxe_boot_sub       --ip-version=4 --allocation-pool start=192.168.68.10,end=192.168.68.250 --enable-dhcp
+  730  neutron net-list
+  731  neutron net-create --tenant-id 022c214ce68e49cc9026f8f40fb20707  pxe_boot_net_68 --shared --provider:network_type flat --provider:physical_network br-boot
+  732  neutron subnet-create pxe_boot_net_68 192.168.68.0/24 --name pxe_boot_sub       --ip-version=4 --allocation-pool start=192.168.68.10,end=192.168.68.250 --enable-dhcp
+  733  neutron subnet
+  734  neutron help
+  735  subnet-update --help
+  736  neutron subnet-update --help
+  737  cat /etc/resolv.conf 
+  738  neutron subnet-update --dns-nameserver 199.187.240.75 --dns-nameserver 199.187.240.76
+  739  neutron subnet-list
+  740  neutron subnet-update --dns-nameserver 199.187.240.75 --dns-nameserver 199.187.240.76 1fba3133-4c2c-4b43-afa3-be07c377c628 
+  741  ps -fauxww
+  742  uptime
+  743  vi /etc/glance/glance-api.conf 
+  744  yum search openstack-deploy
+  745  yum search openstack-ansible
+  746  yum search openstack-an
+  747  yum search ansible
+  748  yum search openstack | less
+  749  yum install openstack-utils
+  750  sh /etc/sysconfig/network-scripts/ifdown-ipv6 
+  751  ifdown ipv6
+  752  ifconfig
+  753  yum install openstack-utils
+  754  openstack-status 
+  755  yum whatprovides /etc/openstack-deploy/
+  756  yum whatprovides /etc/openstack-deploy
+  757  yum whatprovides openstack-deploy
+  758  touch /etc/openstack_deploy/user_variables.yml
+  759  mkdir /etc/openstack_deploy/
+  760  touch /etc/openstack_deploy/user_variables.yml
+  761  . keystonerc_admin 
+  762  openstack endpoint list
+  763  ls
+  764  vi packstack-answers.txt 
+  765  packstack --allinone --answer-file=packstack-answers.txt 
+  766  packstack --answer-file=packstack-answers.txt 
+  767  vi /etc/nova/nova.conf 
+  768  grep -v '^$\|^#' /etc/nova/nova.conf 
+  769  vi packstack-answers.txt 
+  770  packstack --answer-file=packstack-answers.txt 
+  771  cat /var/tmp/packstack/20171212-192249-BOtyhz/manifests/192.168.69.84_controller.pp.log
+  772  cat /var/tmp/packstack/20171212-192249-BOtyhz/manifests/192.168.69.84_controller.pp.log | less
+  773  /usr/bin/nova-manage cell_v2 list_cells --verbose
+  774  vi packstack-answers.txt 
+  775  vi /etc/glance/glance-swift.conf 
+  776  openstack-service restart
+  777  journalctl -xe
+  778  vi /etc/nova/nova.conf 
+  779  cat /var/tmp/packstack/20171212-192249-BOtyhz/manifests/192.168.69.84_controller.pp.log | less
+  780  ls
+  781  openstack-status 
+  782  cd /var/log/glance/
+  783  ls
+  784  cd ..
+  785  ls
+  786  cd nova/
+  787  ll
+  788  ls -ltr
+  789  tail -f nova-api.log 
+  790  tail -f nova-*
+  791  ps -fauxww
+  792  clear
+  793  ps -fauxww
+  794  vi /etc/nova/nova.conf 
+  795  openstack-service restart nova
+  796  tail -f /var/log/nova/nova-*.log 
+  797  tail -f /var/log/nova/nova-*.log &
+  798  openstack-service restart nova
+  799  journalctl -xe
+  800  fg
+  801  vi /etc/nova/nova.conf 
+  802  openstack-service restart nova
+  803  journalctl -xe
+  804  tail -f /var/log/nova/nova-*.log &
+  805  openstack-service restart
+  806  systemctl status neutron-server.service
+  807  openstack-service stop
+  808  ps -faux
+  809  reboot
+  810  . keystonerc_admin 
+  811  openstack-status 
+  812  openstack-service stop
+  813  packstack --answer-file=packstack-answers.txt 
+  814  service iptables status
+  815  vi /etc/sysconfig/iptables
+  816  service iptables status
+  817  service iptables start
+  818  iptables-restore -h
+  819  iptables-restore
+  820  iptables-restore --verbose
+  821  service iptables
+  822  service iptables stop
+  823  ls
+  824  rm JBABIS.img.filepart 
+  825  ll
+  826  iptables-restore --verbose all
+  827  cd /etc/sysconfig/
+  828  cat iptables
+  829  cat iptables.save 
+  830  rm iptables
+  831   mv iptables /root/
+  832  service iptables reload
+  833  service iptables start
+  834  cp iptables.save iptables
+  835  service iptables start
+  836  iptables -L
+  837  packstack --answer-file=packstack-answers.txt 
+  838  cd
+  839  packstack --answer-file=packstack-answers.txt 
+  840  cat /var/tmp/packstack/20171212-202647-wzwBn_/manifests/192.168.69.84_controller.pp.log
+  841  /usr/bin/nova-manage cell_v2 list_cells --verbose
+  842  vi /etc/nova/nova.conf 
+  843  /usr/bin/nova-manage cell_v2 list_cells --verbose\
+  844  /usr/bin/nova-manage cell_v2 list_cells --verbose
+  845  packstack --answer-file=packstack-answers.txt 
+  846  cat /var/tmp/packstack/20171212-203152-MtrHd_/manifests/192.168.69.84_controller.pp.log
+  847  vi /etc/neutron/neutron.conf 
+  848  cat /var/tmp/packstack/20171212-203152-MtrHd_/manifests/192.168.69.84_controller.pp.log
+  849  cat /var/tmp/packstack/20171212-203152-MtrHd_/manifests/192.168.69.84_controller.pp.log | less
+  850  less /var/tmp/packstack/20171212-203152-MtrHd_/manifests/192.168.69.84_controller.pp.log
+  851  vi /etc/neutron/plugin
+  852  vi /etc/neutron/plugin.ini 
+  853  openstack-service stop
+  854  openstack-service status
+  855  openstack-service start
+  856  openstack-service starus
+  857  openstack-service statur
+  858  openstack-service status
+  859  packstack --answer-file=packstack-answers.txt 
+  860   **** Installation completed successfully ******
+  861  Additional information:
+  862   * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
+  863   * File /root/keystonerc_admin has been created on OpenStack client host 192.168.69.84. To use the command line tools you need to source the file.
+  864   * To access the OpenStack Dashboard browse to http://192.168.69.84/dashboard .
+  865  Please, find your login credentials stored in the keystonerc_admin in your home directory.
+  866   * The installation log file is available at: /var/tmp/packstack/20171212-205304-8udptU/openstack-setup.log
+  867  ls
+  868  cat iptables 
+  869  ls
+  870  cat keystonerc_admin 
+  871  . keystonerc_admin 
+  872  openstack object store account show
+  873  openstack object store account set --property Temp-Url-Key=skyscale
+  874  vi packstack-answers.txt 
+  875  openstack object store account show
+  876  vi /etc/glance/glance-swift.conf 
+  877  ps -fauxww
+  878  clear
+  879  history > hsitory-`date`
+  880  history > "history-`date`"
+  881  ls
+  882  mv history-Thu\ Dec\ 14\ 20\:19\:52\ PST\ 2017 history-`date %D`
+  883  mv history-Thu\ Dec\ 14\ 20\:19\:52\ PST\ 2017 history-12-14-17
+  884  mv "history-Thu\ Dec\ 14\ 20\:19\:52\ PST\ 2017" history-12-14-17
+  885  mv "history-" history-12-14-17
+  886  ls
+  887  rsync -rav /etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /root/jdss-bkp/openstack
+  888  ls
+  889  cd jdss-bkp/openstack/
+  890  ls
+  891  cd ..
+  892  ls
+  893  su - bc
+  894  cp -Rp /root/jdss-bkp/* /home/bc/jdss-bkp/
+  895  unalias cp
+  896  cp -Rp /root/jdss-bkp/* /home/bc/jdss-bkp/
+  897  su - bc
+  898  screen -ls
+  899  su - bc
+  900  ll
+  901  exit
+  902  yum search ansbile
+  903  yum search ansible
+  904  yum install ansible-doc python-heat-agent-ansible
+  905  cd /etc/openstack_deploy/
+  906  ll
+  907  cd
+  908  . keystonerc_admin 
+  909  openstack object store show
+  910  openstack object store list
+  911  openstack object list
+  912  openstack object store
+  913  openstack
+  914  openstack help > help
+  915  mv help ostack_help
+  916  less ostack_help 
+  917  openstack ? > help
+  918  cat help
+  919  openstack 
+  920  cat help 
+  921  object list
+  922  opensack
+  923  openstack
+  924  cd jdss-bkp/
+  925  cd openstack/
+  926  ll
+  927  cp -Rp /etc/ironic* .
+  928  ls
+  929  cd ironic
+  930  ls
+  931  history
+  932  cd
+  933  su - bc
+  934  history
+  935  rsync -rav /etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo,ironic,ironic-*} /root/jdss-bkp/openstack
+  936  cd /root/jdss-bkp/
+  937  ls
+  938  cd openstack/
+  939  ls
+  940  cd ..
+  941  ls
+  942  cp -Rp * /home/bc/jdss-bkp/
+  943  unalias cp
+  944  cp -Rp * /home/bc/jdss-bkp/
+  945  ll
+  946  screen 
+  947  exit
+  948  cat /etc/ironic/ironic.conf | grep -v "^#\|^$"
+  949   . keystonerc_admin 
+  950  openstack object store account show
+  951  cd /opt/
+  952  ls
+  953  cd /etc/ironic
+  954  ls
+  955  screen 
+  956  exit
+  957  vi drivers.py
+  958  python drivers.py 
+  959  cat drivers.py > hardware.py
+  960  vi hardware.py 
+  961  python hardware.py 
+  962  cp hardware.py interfaces.py
+  963  vi interfaces.py 
+  964  python interfaces.py 
+  965  screen -ls
+  966  screen -x
+  967  diff -y /etc/ironic/ironic.conf /etc/ironic/ironic.conf.new 
+  968  diff  /etc/ironic/ironic.conf /etc/ironic/ironic.conf.new 
+  969  rsync -rav /etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo,ironic,ironic-*} /root/jdss-bkp/openstack
+  970  cd /etc/ironic
+  971  ls
+  972  mv ironic.conf.new ironic.conf
+  973  ll
+  974  cd ..
+  975  ls
+  976  ls -la
+  977  cd /var/log/
+  978  ls
+  979  cd ironic
+  980  ls
+  981  tail -f ironic-*.log &
+  982  openstack-service restart ironic
+  983  fg
+  984  grep ERROR *.log
+  985  vi ironic-
+  986  ll
+  987  vi /etc/ironic/ironic.conf 
+  988  openstack-service restart ironic
+  989  tail -f ironic-*.log &
+  990  vi /etc/ironic/ironic.conf 
+  991  openstack-service restart ironic
+  992  fg
+  993  grep ERROR *.log
+  994  vi /etc/ironic/ironic.conf 
+  995  jobs
+  996  fg
+  997  tail -f ironic-*.log &
+  998  openstack-service restart ironic
+  999  fg
+ 1000  ll
+ 1001  cd 
+ 1002  ll
+ 1003  cp interfaces.py console.py
+ 1004  vi console.py 
+ 1005  python console.py 
+ 1006  cp console.py deploy.py
+ 1007  cp console.py inspect.py
+ 1008  cp console.py management.py
+ 1009  cp console.py network.py
+ 1010  vi deploy.py 
+ 1011  vi inspect.py 
+ 1012  vi management.py 
+ 1013  vi network.py 
+ 1014  python deploy.py 
+ 1015  python inspect.py management.py network.py 
+ 1016  python inspect.py
+ 1017  python management.py 
+ 1018  python network.py 
+ 1019   . keystonerc_admin 
+ 1020  neutron net-list
+ 1021  vi /etc/ironic/ironic.conf 
+ 1022    sudo systemctl restart openstack-ironic-conductor
+ 1023  tail -f ironic-*.log & 
+ 1024  fg
+ 1025  tail -f ironic-*.log & 
+ 1026  fg
+ 1027  jobs
+ 1028  tail -f /var/log/ironic/ironic-*.log & 
+ 1029    sudo systemctl restart openstack-ironic-conductor
+ 1030  clear
+ 1031  fg
+ 1032  vi /etc/ironic/ironic.conf 
+ 1033  grep   sudo systemctl restart openstack-ironic-conductor
+ 1034   grep enabled_network_interfaces /etc/ironic/ironic.conf 
+ 1035  grep -v '^#/|^$' /etc/ironic/ironic.conf 
+ 1036  grep -v '^#\|^$' /etc/ironic/ironic.conf 
+ 1037  neutron subnet-update help
+ 1038  neutron subnet-update ?
+ 1039  neutron subnet-update
+ 1040  dig @192.168.68.1 google.com
+ 1041  clear
+ 1042  history | grep his
+ 1043  history > hsitory-`date`
+ 1044  history > history-"$TODAY"

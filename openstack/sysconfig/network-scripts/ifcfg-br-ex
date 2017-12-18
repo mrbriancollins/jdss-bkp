@@ -1,0 +1,14 @@
+PROXY_METHOD="none"
+BROWSER_ONLY="no"
+DEFROUTE="yes"
+UUID="4ab40c3a-a301-41eb-aef4-14b4768d2fe8"
+ONBOOT="yes"
+IPADDR="192.168.69.84"
+PREFIX="24"
+GATEWAY="192.168.69.1"
+DEVICE=br-ex
+NAME=br-ex
+DEVICETYPE=ovs
+OVSBOOTPROTO="none"
+TYPE=OVSBridge
+OVS_EXTRA="set bridge br-ex fail_mode=standalone"
