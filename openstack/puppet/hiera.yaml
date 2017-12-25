@@ -12,4 +12,4 @@
 # - /var/lib/hiera on *nix
 # - %CommonAppData%\PuppetLabs\hiera\var on Windows
 # When specifying a datadir, make sure the directory exists.
-  :datadir: /var/tmp/packstack/0cb3fb9834eb419b816461729a957aa1/hieradata
+  :datadir: /var/tmp/packstack/66e9d96752354846b86fa5fff57beb24/hieradata
